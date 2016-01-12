@@ -1,0 +1,15 @@
+//
+//  FYWXPayHandle.h
+//  Jewelry
+//
+//  Created by FYWCQ on 15/11/11.
+//  Copyright © 2015年 ___GY___. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface FYWXPayHandle : NSObject
+
++ (BOOL)sendPayorderName:(NSString *)orderName price:(NSString *)price orderNo:(NSString *)orderId fail:(void(^)(NSString*,NSString*))fail;
+
+@end

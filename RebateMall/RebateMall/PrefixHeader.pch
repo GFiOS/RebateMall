@@ -1,0 +1,63 @@
+//
+//  PrefixHeader.pch
+//  RebateMall
+//
+//  Created by 安帅 on 15/12/11.
+//  Copyright (c) 2015年 silence. All rights reserved.
+//
+
+//　使用Masonry 三方库进行适配
+//define this constant if you want to use Masonry without the 'mas_' prefix
+// 如果你想在用Masonry这个框架的时候省略mas_这个前缀的时候可以定义下面这个宏
+#define MAS_SHORTHAND
+
+//define this constant if you want to enable auto-boxing for default syntax
+// 如果你要想让equalTo这个东西也可以带有装箱功能请定义下面这个宏
+#define MAS_SHORTHAND_GLOBALS
+//#warning mark -上面两个宏一定要定义在框架的主头文件的前面(上面)
+
+#ifdef DEBUG  // 开发阶段，正常打印
+#define DebugLog(...) NSLog(__VA_ARGS__)
+#define DebugMethod() NSLog(@"%s in %@",行数 %d,__func__,[self class],__LINE__)
+#else              //  发布阶段，不显示打印
+#define DebugLog(...)
+#define DebugMethod()
+#endif
+
+/**
+ * RGB颜色
+ */
+#define kRGB(r,g,b) [UIColor colorWithRed:(r)/255. green:(g)/255. blue:(b)/255. alpha:1]
+
+/**
+ * 屏幕适配
+ */
+#define kXFrom5(x) ([[UIScreen mainScreen]bounds].size.width/320.0 * x)
+
+#define kYFrom5(y) ([[UIScreen mainScreen]bounds].size.height/480.0 * y)
+
+/**
+ * 屏幕的宽高
+ */
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+
+
+/**
+ * 首页分段颜色
+ */
+#define kSectionHeaderColorString @"#f9f9f9"
+#define kSectionHeaderTitleColorString @"#d1d1d1"
+#define kPriceColorString @"#fe563b"
+/**
+ * cell 背景颜色
+ */
+#define kCellColorString @"#ffffff"
+#define kCollectionViewColorString @"#f9f9f9"
+#define kCellTitleColorString @"#383838"
+#define kCellDetailTitleColorString @"#a9a9a9"
+
+
+
+
+

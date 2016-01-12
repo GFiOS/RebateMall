@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="222" id="KGk-i7-Jjw" customClass="HomeZhuanChangTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="280"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_0010" translatesAutoresizingMaskIntoConstraints="NO" id="8Mu-BQ-ey1" userLabel="返利团">
+                        <rect key="frame" x="0.0" y="0.0" width="172" height="279"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_0008" translatesAutoresizingMaskIntoConstraints="NO" id="nGp-2R-PLu" userLabel="手机专享">
+                        <rect key="frame" x="172" y="0.0" width="256" height="140"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_0009" translatesAutoresizingMaskIntoConstraints="NO" id="gZy-IC-Nrx" userLabel="降价排行">
+                        <rect key="frame" x="172" y="140" width="256" height="139"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PUf-WV-7SS" userLabel="水平分割线">
+                        <rect key="frame" x="172" y="139" width="256" height="1"/>
+                        <color key="backgroundColor" red="0.81960784313725488" green="0.81960784313725488" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="XGK-au-bGm"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGc-Oi-88V" userLabel="垂直分割线">
+                        <rect key="frame" x="172" y="0.0" width="1" height="279"/>
+                        <color key="backgroundColor" red="0.81960784313725488" green="0.81960784313725488" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="WBA-rs-Aaa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nGp-2R-PLu" firstAttribute="leading" secondItem="PUf-WV-7SS" secondAttribute="leading" id="4tc-A9-MT9"/>
+                    <constraint firstItem="8Mu-BQ-ey1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6TE-48-7Io"/>
+                    <constraint firstItem="SGc-Oi-88V" firstAttribute="top" secondItem="8Mu-BQ-ey1" secondAttribute="top" id="Byb-dC-Fbn"/>
+                    <constraint firstItem="SGc-Oi-88V" firstAttribute="height" secondItem="8Mu-BQ-ey1" secondAttribute="height" id="Eiq-s5-u1p"/>
+                    <constraint firstItem="8Mu-BQ-ey1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="GNP-LH-egN"/>
+                    <constraint firstItem="8Mu-BQ-ey1" firstAttribute="width" secondItem="nGp-2R-PLu" secondAttribute="width" multiplier="257:384" id="Hpq-Pv-qxf"/>
+                    <constraint firstItem="SGc-Oi-88V" firstAttribute="trailing" secondItem="8Mu-BQ-ey1" secondAttribute="trailing" constant="1" id="Mbg-K8-YHu"/>
+                    <constraint firstItem="nGp-2R-PLu" firstAttribute="width" secondItem="PUf-WV-7SS" secondAttribute="width" id="P5J-KZ-IyS"/>
+                    <constraint firstAttribute="bottom" secondItem="8Mu-BQ-ey1" secondAttribute="bottom" id="RBl-Ar-94p"/>
+                    <constraint firstItem="gZy-IC-Nrx" firstAttribute="height" secondItem="nGp-2R-PLu" secondAttribute="height" multiplier="1:1" id="Ri8-rL-rBS"/>
+                    <constraint firstItem="nGp-2R-PLu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ub3-XX-Ddu"/>
+                    <constraint firstItem="gZy-IC-Nrx" firstAttribute="top" secondItem="nGp-2R-PLu" secondAttribute="bottom" id="YLp-9j-hGr"/>
+                    <constraint firstItem="gZy-IC-Nrx" firstAttribute="width" secondItem="nGp-2R-PLu" secondAttribute="width" id="bJV-sE-shN"/>
+                    <constraint firstItem="nGp-2R-PLu" firstAttribute="leading" secondItem="8Mu-BQ-ey1" secondAttribute="trailing" id="iAp-Y0-EWE"/>
+                    <constraint firstItem="gZy-IC-Nrx" firstAttribute="leading" secondItem="nGp-2R-PLu" secondAttribute="leading" id="iku-oQ-kLh"/>
+                    <constraint firstAttribute="bottom" secondItem="gZy-IC-Nrx" secondAttribute="bottom" id="nqk-3n-JzR"/>
+                    <constraint firstItem="nGp-2R-PLu" firstAttribute="bottom" secondItem="PUf-WV-7SS" secondAttribute="bottom" id="oT5-jL-pxe"/>
+                    <constraint firstAttribute="trailing" secondItem="nGp-2R-PLu" secondAttribute="trailing" id="zXM-VG-3VC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="fanliView" destination="8Mu-BQ-ey1" id="dMk-Yt-lt7"/>
+                <outlet property="paihangView" destination="gZy-IC-Nrx" id="ha8-RN-YOJ"/>
+                <outlet property="zhunxiangView" destination="nGp-2R-PLu" id="KLt-gf-jwj"/>
+            </connections>
+            <point key="canvasLocation" x="512" y="426"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="_0008" width="382" height="138"/>
+        <image name="_0009" width="382" height="134"/>
+        <image name="_0010" width="257" height="273"/>
+    </resources>
+</document>
